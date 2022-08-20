@@ -4,7 +4,12 @@ import streamlit as st
 
 from feature_engineering import load_data, clean_data, filter_by_year
 
-st.set_page_config(layout='wide')
+st.set_page_config(
+    page_title="Explorateur d'OVNIs",
+    page_icon='./images/logo_ovni.jpeg',
+    layout='wide',
+    initial_sidebar_state='auto',
+)
 st.title("Explorateur d'OVNIs")
 
 # Loading
